@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block titulo %}  {{ titulo }}  {% endblock %}
+{%  block content %}
+<h2>Noticias</h2>
+    {% for noticia in noticias %}
+        {{ noticia.titulo }}<br>
+    {% endfor %}
+{% endblock %}
