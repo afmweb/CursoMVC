@@ -15,7 +15,7 @@ class HomeController extends BaseController {
        // dump( $noticias );
         
         $dados = array('titulo' => 'Página Inicial', 'noticias'=>$noticias);
-        $template = $this->twig->loadTemplate('home.html');
+        $template = $this->twig->loadTemplate('Site/home.html');
         $template->display($dados);
     }
 

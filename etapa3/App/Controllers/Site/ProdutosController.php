@@ -9,7 +9,7 @@ class ProdutosController extends BaseController {
 
     public function index() {
         $dados = array( 'titulo' => 'Proudtos' );
-        $template = $this->twig->loadTemplate( 'Produtos.html' );
+        $template = $this->twig->loadTemplate( 'Site/Produtos.html' );
         $template->display( $dados );
     }
 

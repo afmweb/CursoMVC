@@ -10,7 +10,7 @@ class ContatoController extends BaseController {
     public function index() {
 
         $dados = array('titulo' => 'Contato');
-        $template = $this->twig->loadTemplate('contato.html');
+        $template = $this->twig->loadTemplate('Site/contato.html');
         $template->display($dados);
     }
 
@@ -45,7 +45,7 @@ class ContatoController extends BaseController {
             
           
 
-        $template = $this->twig->loadTemplate('contato.html');
+        $template = $this->twig->loadTemplate('Site/contato.html');
         //$template = $this->twig->loadTmplate('contato.html');
         $template->display($dados);
           else:
